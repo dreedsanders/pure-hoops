@@ -1,0 +1,82 @@
+<%= form_with(model: team) do |form| %>
+  <% if team.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(team.errors.count, "error") %> prohibited this team from being saved:</h2>
+
+      <ul>
+        <% team.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.number_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :player1 %>
+    <%= form.text_field :player1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :player_id %>
+    <%= form.text_field :player_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :player2 %>
+    <%= form.text_field :player2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :player_id %>
+    <%= form.text_field :player_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :player3 %>
+    <%= form.text_field :player3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :player_id %>
+    <%= form.text_field :player_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :player4 %>
+    <%= form.text_field :player4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :player_id %>
+    <%= form.text_field :player_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :player5 %>
+    <%= form.text_field :player5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :player_id %>
+    <%= form.text_field :player_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :team_name %>
+    <%= form.text_field :team_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :string %>
+    <%= form.text_field :string %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

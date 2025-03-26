@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @action_card.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @action_card.description %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @action_card.type %>
+</p>
+
+<%= link_to 'Edit', edit_action_card_path(@action_card) %> |
+<%= link_to 'Back', action_cards_path %>

@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Action Cards</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Type</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @action_cards.each do |action_card| %>
+      <tr>
+        <td><%= action_card.title %></td>
+        <td><%= action_card.description %></td>
+        <td><%= action_card.type %></td>
+        <td><%= link_to 'Show', action_card %></td>
+        <td><%= link_to 'Edit', edit_action_card_path(action_card) %></td>
+        <td><%= link_to 'Destroy', action_card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Action Card', new_action_card_path %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @game_card.location %>
+</p>
+
+<p>
+  <strong>Default rating:</strong>
+  <%= @game_card.default_rating %>
+</p>
+
+<%= link_to 'Edit', edit_game_card_path(@game_card) %> |
+<%= link_to 'Back', game_cards_path %>

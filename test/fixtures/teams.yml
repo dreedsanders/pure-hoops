@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  player1: MyString
+  player_id: MyString
+  player2: MyString
+  player_id: MyString
+  player3: MyString
+  player_id: MyString
+  player4: MyString
+  player_id: MyString
+  player5: MyString
+  player_id: MyString
+  team_name: MyString
+  string: MyString
+
+two:
+  user_id: 1
+  player1: MyString
+  player_id: MyString
+  player2: MyString
+  player_id: MyString
+  player3: MyString
+  player_id: MyString
+  player4: MyString
+  player_id: MyString
+  player5: MyString
+  player_id: MyString
+  team_name: MyString
+  string: MyString
